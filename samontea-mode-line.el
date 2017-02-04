@@ -27,4 +27,4 @@
 (setf display-time-default-load-average nil)
 (display-time-mode)
 
-(provide 'samontea-mode-line-configuration)
+(provide 'samontea-mode-line)
