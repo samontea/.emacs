@@ -1,4 +1,5 @@
 (setf theme-list '(cyberpunk
+                   dracula
                    monokai
                    wombat
                    wilson

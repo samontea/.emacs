@@ -1,5 +1,6 @@
 (kotct/personal-packages git-gutter-fringe+
                          cyberpunk-theme
+                         dracula-theme
                          monokai-theme
                          color-theme-wombat
                          sublime-themes
