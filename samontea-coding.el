@@ -22,4 +22,10 @@
 ;; enable mouse input on the terminal
 (xterm-mouse-mode t)
 
+(global-set-key (kbd "C-x C-m") 'compile)
+
+;; slime config
+(setf inferior-lisp-program "/usr/local/bin/sbcl")
+(setf slime-contribs '(slime-fancy slime-asdf slime-banner))
+
 (provide 'samontea-coding)
