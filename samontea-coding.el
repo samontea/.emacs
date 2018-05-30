@@ -1,3 +1,10 @@
+(projectile-global-mode)
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
+
 (global-git-gutter+-mode t)
 
 (defun vim-new-line-below ()

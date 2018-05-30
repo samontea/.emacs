@@ -2,9 +2,11 @@
                          cyberpunk-theme
                          dracula-theme
                          monokai-theme
-                         color-theme-wombat
                          sublime-themes
                          twilight-anti-bright-theme
+                         projectile
+                         flx-ido
+;;                         ggtags
                          jazz-theme)
 
 (require 'samontea-coding)
