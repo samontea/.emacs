@@ -10,4 +10,7 @@
 (global-set-key (kbd "C-x M-h") 'windmove-left)
 (global-set-key (kbd "C-x M-l") 'windmove-right)
 
+(defvar kotct/darwin-swap-command-option
+  nil)
+
 (provide 'samontea-keybindings)

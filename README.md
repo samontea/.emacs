@@ -11,6 +11,9 @@ brew install global --with-ctags
 ```sh
 cp /usr/local/etc/gtags.conf $HOME/.globalrc
 ```
+```sh
+pip install pygments
+```
 Uncomment `ggtags` in `samontea-hub.el`.
 ## Projectile Setup
 To setup projectil set your source path using:

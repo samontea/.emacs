@@ -1,4 +1,5 @@
 (kotct/personal-packages git-gutter-fringe+
+                         slime
                          cyberpunk-theme
                          dracula-theme
                          monokai-theme
@@ -15,6 +16,7 @@
 (require 'samontea-mode-line)
 (require 'samontea-scratch)
 (require 'samontea-themes)
+(require 'samontea-org)
 
 (defun samontea-hub-unload-function ()
   (unload-feature 'samontea-coding 'force)
