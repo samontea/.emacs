@@ -2,7 +2,6 @@
                    dracula
                    monokai
                    wilson
-                   twilight-anti-bright
                    jazz))
 
 (defun samontea/switch-theme (&optional theme)
