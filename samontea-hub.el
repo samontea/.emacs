@@ -2,12 +2,13 @@
                          slime
                          cyberpunk-theme
                          dracula-theme
+                         doom-themes
                          monokai-theme
                          sublime-themes
                          twilight-anti-bright-theme
                          projectile
                          flx-ido
-;;                         ggtags
+                         ggtags
                          jazz-theme)
 
 (require 'samontea-coding)

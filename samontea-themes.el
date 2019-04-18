@@ -3,6 +3,12 @@
                    monokai
                    wilson
                    twilight-anti-bright
+                   doom-one
+                   doom-vibrant
+                   doom-peacock
+                   doom-molokai
+                   doom-nord
+                   doom-city-lights
                    jazz))
 
 (defun samontea/switch-theme (&optional theme)

@@ -7,6 +7,10 @@
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               (ggtags-mode 1))))
 
+;;enable ggtags for elixir-mode
+(add-hook 'ruby-mode (lambda ()
+                         (ggtags-mode 1)))
+
 ;; turn on git gutter+
 (global-git-gutter+-mode t)
 
