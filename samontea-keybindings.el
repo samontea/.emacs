@@ -10,6 +10,14 @@
 (global-set-key (kbd "C-x M-h") 'windmove-left)
 (global-set-key (kbd "C-x M-l") 'windmove-right)
 
+;; Ace Window
+(global-set-key (kbd "M-o") 'ace-window)
+;; Set ace window keys to home row
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+
+;; Goto line w/ previews
+(global-set-key (kbd "M-g M-g") 'goto-line-preview)
+
 (defvar kotct/darwin-swap-command-option
   nil)
 

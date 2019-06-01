@@ -7,8 +7,12 @@
                          sublime-themes
                          twilight-anti-bright-theme
                          projectile
+                         ace-window
                          flx-ido
                          ggtags
+                         goto-line-preview
+                         rainbow-delimiters
+                         minimap
                          jazz-theme)
 
 (require 'samontea-coding)

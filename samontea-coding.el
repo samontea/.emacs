@@ -14,6 +14,9 @@
 ;; turn on git gutter+
 (global-git-gutter+-mode t)
 
+;; turn on rainbow delimiters
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
 (defun vim-new-line-below ()
   "o like functionality from vim, really helpful in org-mode"
   (interactive)
