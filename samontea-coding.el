@@ -1,15 +1,19 @@
 ;; enalbe projectile globaly
 (projectile-global-mode)
 
-;; enable ggtags for c-mode, c++-mode, and java-mode
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
+;; setup company
+(require 'company-lsp)
+(push 'company-lsp company-backends)
 
-;;enable ggtags for elixir-mode
-(add-hook 'ruby-mode (lambda ()
-                         (ggtags-mode 1)))
+(add-hook 'after-init-hook 'global-company-mode)
+
+(require 'ccls)
+(setq ccls-executable "/home/samuel/ccls-0.20190314.1/Release/ccls")
+(add-hook 'c++-mode-hook #'lsp)
+(add-hook 'c++-mode-hook (lambda () (auto-complete-mode -1)))
+
+(require 'lsp-ui)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
 ;; turn on git gutter+
 (global-git-gutter+-mode t)
@@ -34,5 +38,8 @@
 ;; slime config
 (setf inferior-lisp-program "/usr/local/bin/sbcl")
 (setf slime-contribs '(slime-fancy slime-asdf slime-banner))
+
+;; show trailing whitespace
+(setq show-trailing-whitespace t)
 
 (provide 'samontea-coding)

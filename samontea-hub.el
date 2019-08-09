@@ -8,8 +8,12 @@
                          twilight-anti-bright-theme
                          projectile
                          ace-window
+                         lsp-mode
+                         lsp-ui
+                         ccls
+                         company-lsp
                          flx-ido
-                         ggtags
+;;                         ggtags
                          goto-line-preview
                          rainbow-delimiters
                          minimap
