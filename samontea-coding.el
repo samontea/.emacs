@@ -44,8 +44,8 @@
 ;; show trailing whitespace
 (setq show-trailing-whitespace t)
 
-(load-file "/usr/local/share/emacs/site-lisp/proof-general/generic/proof-site.el")
-
+;; enable proof general
+(require 'proof-site)
 ;; Load company-coq when opening Coq files
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
