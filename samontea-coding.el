@@ -11,6 +11,8 @@
 (setq ccls-executable "/home/samuel/ccls-0.20190314.1/Release/ccls")
 (add-hook 'c++-mode-hook #'lsp)
 (add-hook 'c++-mode-hook (lambda () (auto-complete-mode -1)))
+(add-hook 'scala-mode-hook #'lsp)
+(add-hook 'scala-mode-hook (lambda () (auto-complete-mode -1)))
 
 (require 'lsp-ui)
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
@@ -41,5 +43,12 @@
 
 ;; show trailing whitespace
 (setq show-trailing-whitespace t)
+
+(load-file "/usr/local/share/emacs/site-lisp/proof-general/generic/proof-site.el")
+
+;; Load company-coq when opening Coq files
+(add-hook 'coq-mode-hook #'company-coq-mode)
+
+(setf proof-auto-raise-buffers t)
 
 (provide 'samontea-coding)

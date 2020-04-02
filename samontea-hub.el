@@ -15,8 +15,13 @@
                          flx-ido
 ;;                         ggtags
                          goto-line-preview
+                         boogie-friends
                          rainbow-delimiters
+                         proof-general
                          minimap
+                         company-coq
+                         scala-mode
+                         sbt-mode
                          jazz-theme)
 
 (require 'samontea-coding)
