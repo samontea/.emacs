@@ -15,6 +15,11 @@
 ;; Set ace window keys to home row
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
+;; Projectile mode
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(setq lsp-keymap-prefix "C-c l")
+
 ;; Goto line w/ previews
 (global-set-key (kbd "M-g M-g") 'goto-line-preview)
 

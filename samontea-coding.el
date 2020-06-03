@@ -7,8 +7,6 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
-(require 'ccls)
-(setq ccls-executable "/home/samuel/ccls-0.20190314.1/Release/ccls")
 (add-hook 'c++-mode-hook #'lsp)
 (add-hook 'c++-mode-hook (lambda () (auto-complete-mode -1)))
 (add-hook 'scala-mode-hook #'lsp)
@@ -44,8 +42,6 @@
 ;; show trailing whitespace
 (setq show-trailing-whitespace t)
 
-;; enable proof general
-(require 'proof-site)
 ;; Load company-coq when opening Coq files
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
