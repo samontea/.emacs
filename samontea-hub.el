@@ -1,3 +1,8 @@
+(setf package-archive-priorities
+      '(("melpa" . 20)
+        ("gnu" . 10)
+        ("melpa-stable" . 0)))
+
 (kotct/personal-packages git-gutter-fringe+
                          slime
                          cyberpunk-theme
