@@ -20,6 +20,8 @@
 (add-hook 'web-mode-hook (lambda () (auto-complete-mode -1)))
 (add-hook 'typescript-mode-hook #'lsp)
 (add-hook 'typescript-mode-hook (lambda () (auto-complete-mode -1)))
+(add-hook 'rust-mode-hook #'lsp)
+(add-hook 'rust-mode-hook (lambda () (auto-complete-mode -1)))
 
 (require 'lsp-ui)
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
