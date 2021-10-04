@@ -12,11 +12,12 @@
                          sublime-themes
                          twilight-anti-bright-theme
                          projectile
+                         bison-mode
+                         typescript-mode
                          ace-window
                          lsp-mode
                          lsp-ui
-                         ccls
-                         company-lsp
+                         dap-mode
                          flx-ido
 ;;                         ggtags
                          goto-line-preview
