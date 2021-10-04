@@ -3,6 +3,13 @@
         ("gnu" . 10)
         ("melpa-stable" . 0)))
 
+(kotct/personal-packages proof-general)
+
+(setf package-archive-priorities
+      '(("melpa-stable" . 20)
+        ("gnu" . 10)
+        ("melpa" . 0)))
+
 (kotct/personal-packages git-gutter-fringe+
                          slime
                          cyberpunk-theme
@@ -23,7 +30,6 @@
                          goto-line-preview
                          boogie-friends
                          rainbow-delimiters
-                         proof-general
                          minimap
                          company-coq
                          scala-mode
