@@ -26,12 +26,13 @@
                          lsp-ui
                          dap-mode
                          flx-ido
+                         iedit
 ;;                         ggtags
-                         goto-line-preview
+;;                         goto-line-preview
                          boogie-friends
                          rainbow-delimiters
                          minimap
-                         company-coq
+;;                         company-coq
                          scala-mode
                          sbt-mode
                          jazz-theme)

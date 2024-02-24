@@ -2,15 +2,15 @@
 (projectile-global-mode)
 
 ;; setup company
-(require 'company-lsp)
-(setq company-minimum-prefix-length 1
-      company-idle-delay 0.0) ;; default is 0.2
+;;(require 'company-lsp)
+;;(setq company-minimum-prefix-length 1
+;;      company-idle-delay 0.0) ;; default is 0.2
 
 ;; setup dap-lldb
 ;; (setq dap-auto-configure-features '(sessions locals controls tooltip))
 ;; (require 'dap-lldb)
 
-(add-hook 'after-init-hook 'global-company-mode)
+;;(add-hook 'after-init-hook 'global-company-mode)
 
 (add-hook 'c++-mode-hook #'lsp)
 (add-hook 'c++-mode-hook (lambda () (auto-complete-mode -1)))
@@ -54,7 +54,7 @@
 (setq show-trailing-whitespace t)
 
 ;; Load company-coq when opening Coq files
-(add-hook 'coq-mode-hook #'company-coq-mode)
+;;(add-hook 'coq-mode-hook #'company-coq-mode)
 
 (setf proof-auto-raise-buffers t)
 
